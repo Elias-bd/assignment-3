@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Fonts CDN -->
+
+    <!-- ---------sora------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- ------------adlam -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+    <!-- DaisyUI CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome CDN  -->
+    <script src="https://kit.fontawesome.com/5c09957b7e.js" crossorigin="anonymous"></script>
+
+    
+
+    <style>
+        .sora-primary {
+            font-family: "Sora", serif;
+        }
+
+        .adlam-display-regular {
+            font-family: "ADLaM Display", serif;
+        }
+    </style>
+
+    <!--Tailwind Custom config  -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        "btn-bg": '#FFDC26',
+                        "header-bg": '#FFF9F4',
+                        "font-primary": '#FFDC26',
+                    }
+                }
+            }
+        }
+    </script>
+
+    
+
+</head>
+
+<body>
+    <header class="">
+        <nav class="bg-header-bg w-full">
+            <div class="navbar w-[85%] md:container mx-auto sora-primary">
+                <div class="navbar-start">
+                    
+                    <img src="images/logo-header.png" alt="">
+                    <a class="text-2xl ml-3 hidden md:block">Browse<span class="text-font-primary">4</span>Pets</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+            
+                <div class="navbar-end">
+                    <a class="hidden md:block" ><i class="fa-regular fa-bell"></i></a>
+                    <a class="hidden md:block ml-4" ><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <button class="btn bg-header-bg hidden md:block ml-4 border-yellow-300 px-5 py-2 text-xl bg-none"><a>Login</a></button>
+                    <button class="btn hidden md:block ml-4 bg-btn-bg text-xl px-5 py-2"><a>Register</a></button>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-24 p-1 shadow text-base">
+
+                            <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-black md:border-none">
+            
+        </nav>
+        
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
