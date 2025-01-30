@@ -24,7 +24,7 @@
     <!-- font awesome CDN  -->
     <script src="https://kit.fontawesome.com/5c09957b7e.js" crossorigin="anonymous"></script>
 
-    
+
 
     <style>
         .font-sora {
@@ -46,6 +46,7 @@
                         clifford: '#da373d',
                         "btn-bg": '#FFDC26',
                         "header-bg": '#FFF9F4',
+                        "card-bg": '#F9DF8A',
                         "font-primary": '#FFDC26',
                     }
                 }
@@ -53,17 +54,17 @@
         }
     </script>
 
-    
+
 
 </head>
 
 <body>
-    <header class="">
-                <!-- navbar -->
-        <nav class="bg-header-bg w-full">
+    <header>
+        <!-- navbar -->
+        <nav class="bg-header-bg w-full md:z-20">
             <div class="navbar w-[85%] md:container mx-auto font-sora">
                 <div class="navbar-start">
-                    
+
                     <img src="images/logo-header.png" alt="">
                     <a class="text-2xl ml-3 hidden md:block">Browse<span class="text-font-primary">4</span>Pets</a>
                 </div>
@@ -74,11 +75,12 @@
                         <li><a>Contact us</a></li>
                     </ul>
                 </div>
-            
+
                 <div class="navbar-end">
-                    <a class="hidden md:block" ><i class="fa-regular fa-bell"></i></a>
-                    <a class="hidden md:block ml-4" ><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <button class="btn bg-header-bg hidden md:block ml-4 border-yellow-300 px-5 py-2 text-xl bg-none"><a>Login</a></button>
+                    <a class="hidden md:block"><i class="fa-regular fa-bell"></i></a>
+                    <a class="hidden md:block ml-4"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <button
+                        class="btn bg-header-bg hidden md:block ml-4 border-yellow-300 px-5 py-2 text-xl bg-none"><a>Login</a></button>
                     <button class="btn hidden md:block ml-4 bg-btn-bg text-xl px-5 py-2"><a>Register</a></button>
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -92,47 +94,101 @@
                             class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-24 p-1 shadow text-base">
 
                             <li><a>Find a pet</a></li>
-                        <li><a>Breeds</a></li>
-                        <li><a>Contact us</a></li>
+                            <li><a>Breeds</a></li>
+                            <li><a>Contact us</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <hr class="border-black md:border-none">
-            
+
         </nav>
 
-                <!-- Banner section  -->
+        <!-- Banner section  -->
 
-        <section class="w-11/12  md:container mx-auto mt-44 md:mt-2">
-            
-            <div class="absolute">
-                <div class="relative mt-32 md:mt-2">
-                    
-                    <img src="images/cat-big.png" alt="">
+        <section class="w-11/12  md:container mx-auto">
+            <div class="">
+
+
+                <div class="w-11/12 md:w-[700px] relative z-10 mt-8 md:mt-24 ">
+                    <h1 class="text-5xl md:text-6xl font-adlam mb-3">Pamper Your Pet,Because They Deserve the best</h1>
+                    <p class="text-lg font-sora mb-3">Discover a world of treats, toys, and essentials handpicked for
+                        your furry friends. Shop now and make tails wag with joy!</p>
+                    <button class="bg-btn-bg text-xl py-2 px-5 rounded-lg font-sora">Find a Pet</button>
                 </div>
 
-                
-                
-
-                <div class="w-11/12 md:w-[650px] relative md:-mt-[650px] -mt-[510px]">
-                    <h1 class="text-5xl md:text-6xl font-adlam mb-3">Pamper Your Pet,Because They Deserve  the best</h1>
-                <p class="text-lg font-sora mb-3">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="bg-btn-bg text-xl py-2 px-5 rounded-lg font-sora">Find a Pet</button>
-                </div>
-
-                
-               
+                <div class=" -mt-24 md:-mt-80"><img src="images/cat-big.png" alt=""></div>
             </div>
-          
-
-
         </section>
-        
 
     </header>
 
     <main>
+        <!-- browse by category  -->
+
+        <section class="w-11/12 md:container mx-auto my-32 font-adlam">
+
+            <h3 class="text-2xl font-adlam mb-12 md:ml-20">Browse by Categories</h3>
+
+            <!-- card section  -->
+
+            <div class=" flex flex-wrap justify-center items-center gap-6">
+                <div class="w-44 md-w-48 h-64 bg-card-bg text-center pt-9 px-12 rounded-xl ">
+                    <img class="bg-white p-7 rounded-full items-center mb-6" src="images/dog-cartoon.png" alt="">
+                    <h5 class="mb-3 font-adlam text-xl">Dog</h5>
+                    <p class="font-sora text-base">3 items</p>
+                </div>
+                <div class="w-44 md-w-48 h-64 bg-card-bg text-center pt-9 px-12 rounded-xl ">
+                    <img class="bg-white p-7 rounded-full items-center mb-6" src="images/dog-cartoon.png" alt="">
+                    <h5 class="mb-3 font-adlam text-xl">Dog</h5>
+                    <p class="font-sora text-base">3 items</p>
+                </div>
+                <div class="w-44 md-w-48 h-64 bg-card-bg text-center pt-9 px-12 rounded-xl ">
+                    <img class="bg-white p-7 rounded-full items-center mb-6" src="images/dog-cartoon.png" alt="">
+                    <h5 class="mb-3 font-adlam text-xl">Dog</h5>
+                    <p class="font-sora text-base">3 items</p>
+                </div>
+                <div class="w-44 md-w-48 h-64 bg-card-bg text-center pt-9 px-12 rounded-xl ">
+                    <img class="bg-white p-7 rounded-full items-center mb-6" src="images/dog-cartoon.png" alt="">
+                    <h5 class="mb-3 font-adlam text-xl">Dog</h5>
+                    <p class="font-sora text-base">3 items</p>
+                </div>
+                <div class="w-44 md-w-48 h-64 bg-card-bg text-center pt-9 px-12 rounded-xl ">
+                    <img class="bg-white p-7 rounded-full items-center mb-6" src="images/dog-cartoon.png" alt="">
+                    <h5 class="mb-3 font-adlam text-xl">Dog</h5>
+                    <p class="font-sora text-base">3 items</p>
+                </div>
+                <div class="w-44 md-w-48 h-64 bg-card-bg text-center pt-9 px-12 rounded-xl ">
+                    <img class="bg-white p-7 rounded-full items-center mb-6" src="images/dog-cartoon.png" alt="">
+                    <h5 class="mb-3 font-adlam text-xl">Dog</h5>
+                    <p class="font-sora text-base">3 items</p>
+                </div>
+                <div class="w-44 md-w-48 h-64 bg-card-bg text-center pt-9 px-12 rounded-xl ">
+                    <img class="bg-white p-7 rounded-full items-center mb-6" src="images/dog-cartoon.png" alt="">
+                    <h5 class="mb-3 font-adlam text-xl">Dog</h5>
+                    <p class="font-sora text-base">3 items</p>
+                </div>
+                <div class="w-44 md-w-48 h-64 bg-card-bg text-center pt-9 px-12 rounded-xl md:hidden">
+                    <img class="bg-white p-7 rounded-full items-center mb-6" src="images/dog-cartoon.png" alt="">
+                    <h5 class="mb-3 font-adlam text-xl">Dog</h5>
+                    <p class="font-sora text-base">3 items</p>
+                </div>
+                
+
+
+
+            </div>
+
+
+
+
+
+
+        </section>
+
+
+
+
 
     </main>
 
