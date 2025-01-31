@@ -52,6 +52,7 @@
                         "card-grl": '#ACD2FD',
                         "card-gry": '#FFF9F4',
                         "card-gly": '#F9DF8A',
+                        "footer-bg": '#FFDC26',
                     }
                 }
             }
@@ -69,7 +70,7 @@
             <div class="navbar w-[85%] md:container mx-auto font-sora">
                 <div class="navbar-start">
 
-                    <img src="images/logo-header.png" alt="">
+                    <img class="animate-spin" src="images/logo-header.png" alt="">
                     <a class="text-2xl ml-3 hidden md:block">Browse<span class="text-font-primary">4</span>Pets</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -118,7 +119,7 @@
                     <h1 class="text-5xl md:text-6xl font-adlam mb-3">Pamper Your Pet,Because They Deserve the best</h1>
                     <p class="text-lg font-sora mb-3">Discover a world of treats, toys, and essentials handpicked for
                         your furry friends. Shop now and make tails wag with joy!</p>
-                    <button class="bg-btn-bg text-xl py-2 px-5 rounded-lg font-sora">Find a Pet</button>
+                    <button class="bg-btn-bg text-xl py-2 px-5 rounded-lg font-sora animate-pulse">Find a Pet</button>
                 </div>
 
                 <div class=" -mt-24 md:-mt-80"><img src="images/cat-big.png" alt=""></div>
@@ -186,7 +187,7 @@
 
             <div class="md:container mx-auto">
                 <h3 class="text-4xl font-adlam mb-12 ml-4 md:ml-28 pt-32">Trending Pet Products</h3>
-                <div class="flex flex-col md:flex-row gap-6 justify-center items-center pb-32">
+                <div class="flex flex-col md:flex-row gap-6 justify-center items-center pb-2 md:pb-32">
 
                     <!-- banner card  -->
                     <div class="w-11/12 md:w-[420px] h-[400px] bg-card-bg rounded-xl ">
@@ -195,7 +196,7 @@
                             <p class="text-base mb-2">Discover a world of treats, toys, and essentials handpicked for
                             </p>
 
-                            <button class=" bg-white py-4 px-8 text-lg rounded-xl"> Shop Now </button>
+                            <button class=" bg-white py-4 px-8 text-lg rounded-xl hover:bg-cyan-200 hover:animate-pulse"> Shop Now </button>
                         </div>
 
                         <div class="relative -mt-36 ml-52 md:ml-44">
@@ -342,36 +343,14 @@
                                 <p class="text-sm md:text-base font-semibold">$39.99</p>
                             </div>
                         </div>
-
-
-
-
-
-
                     </div>
-
-
-
-
-
-
                 </div>
-
-
-
-
             </div>
-
-
-
-
-
-
         </section>
 
         <!-- Everyday Low Price section  -->
 
-        <section class="w-11/12 md:container mx-auto font-adlam mb-28">
+        <section class="w-11/12 md:container mx-auto font-adlam mb-[500px] md:mb-[300px]">
 
             <h3 class="text-4xl mb-10 ml-4 md:ml-28">Everyday low Price</h3>
 
@@ -421,7 +400,66 @@
 
     </main>
 
-    <footer>
+    <footer class="bg-footer-bg ">
+        <div
+            class="w-11/12 md:max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-20 bg-header-bg rounded-xl relative -top-96 md:-top-52">
+            <div>
+                <img src="images/cute-pet-mid.png" alt="">
+            </div>
+
+            <div class="text-center md:text-left pb-8">
+                <h3 class="font-adlam text-4xl mb-4">Get Pawsome News!</h3>
+                <p class="font-sora text-xl mb-4">Exclusive training tips, ticks, product deals and more.</p>
+                <input class="w-11/12 md:w-[450px] h-10 rounded-lg bg-white mb-9 pl-12" type="text" name="" id="" placeholder="Enter Email">
+                <div>
+                    <button class="bg-btn-bg text-xl py-2 px-5 rounded-lg font-sora animate-pulse">Subscribe</button>
+                </div>
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-11/12 md:container mx-auto relative font-sora -top-56 md:-top-16">
+            <div class="flex flex-col md:flex-row justify-between md:items-center ">
+                <div class="w-11/12 md:w-2/6 pb-8">
+                    <div class=" flex justify-self-start items-center ">
+                        <img src="images/logo-footer.png" alt="">
+                        <a class="text-2xl ml-3">Browse<span class="text-font-primary">4</span>Pets</a>
+
+                    </div>
+                    <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                </div>
+
+
+                <div class="pb-8 md:py-6">
+                    <p class="hover:animate-pulse cursor-pointer">Find a pet</p>
+                    <p class="hover:animate-pulse cursor-pointer">Breeds</p>
+                    <p class="hover:animate-pulse cursor-pointer">Contact us</p>
+                    
+                </div>
+
+
+                <div class="mb-10">
+                    <h6 class="footer-title">Follow Us</h6>
+
+                    <div class="flex gap-2 ">
+                        <img class="hover:animate-spin cursor-pointer" src="images/fb.png" alt="">
+                    <img class="hover:animate-spin cursor-pointer" src="images/twitter.png" alt="">
+                    <img class="hover:animate-spin cursor-pointer" src="images/dribble.png" alt="">
+                    <img class="hover:animate-spin cursor-pointer" src="images/google+.png" alt="">
+                    </div>
+                    
+
+                </div>
+
+
+
+
+
+
+            </div>
 
     </footer>
 
